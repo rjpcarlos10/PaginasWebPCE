@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 6 - HTML Styles - CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 6: HTML Styles - CSS</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Definición</h2>
+    <p>La etiqueta <code>&lt;style&gt;</code> en HTML permite incluir reglas CSS directamente dentro del documento. También es posible usar el atributo <code>style</code> en línea para aplicar estilos a elementos individuales, aunque no es lo más recomendable para proyectos grandes.</p>
+  </section>
+
+  <section>
+    <h2>Sintaxis y uso</h2>
+    <p>Existen 3 formas de aplicar CSS a un documento HTML:</p>
+    <ol>
+      <li><strong>CSS en línea:</strong> Utilizando el atributo <code>style</code> directamente en la etiqueta HTML.</li>
+      <li><strong>CSS interno:</strong> Mediante la etiqueta <code>&lt;style&gt;</code> en la sección <code>&lt;head&gt;</code>.</li>
+      <li><strong>CSS externo:</strong> En un archivo independiente (<code>.css</code>) enlazado con la etiqueta <code>&lt;link&gt;</code> dentro de <code>&lt;head&gt;</code>.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Ejemplo</h2>
+    <pre><code>&lt;!-- Ejemplo de CSS en línea --&gt;
+&lt;p style="color:red; font-size:20px;"&gt;Este párrafo está en rojo&lt;/p&gt;
+
+&lt;!-- Ejemplo de CSS interno --&gt;
+&lt;style&gt;
+  p {
+    color: blue;
+    font-size: 18px;
+  }
+&lt;/style&gt;
+
+&lt;!-- Ejemplo de CSS externo --&gt;
+&lt;link rel="stylesheet" href="estilos.css" /&gt;
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 6</p>
+</footer>
+
+</body>
+</html>

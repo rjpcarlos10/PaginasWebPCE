@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 2 - Sintaxis básica de funcionalidades CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 2: Sintaxis básica de funcionalidades CSS</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Definición</h2>
+    <p>CSS (Cascading Style Sheets) se utiliza para dar estilo y formatear la apariencia de las páginas web. La sintaxis de CSS se basa en selectores y declaraciones que definen cómo se verán los elementos HTML.</p>
+  </section>
+
+  <section>
+    <h2>Sintaxis básica</h2>
+    <pre><code>selector {
+    propiedad: valor;
+    propiedad: valor;
+    ...
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Uso</h2>
+    <p>Se declara un <em>selector</em> (un elemento HTML, una clase o un id) seguido de llaves <code>{ }</code>. Dentro de ellas se ponen las propiedades y valores que afectarán el estilo de dicho elemento, por ejemplo, color de fondo, fuentes, márgenes, bordes, etc.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplo</h2>
+    <pre><code>/* Ejemplo de un estilo básico en CSS */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+p {
+    color: #333333;
+    line-height: 1.5;
+}
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 2</p>
+</footer>
+
+</body>
+</html>

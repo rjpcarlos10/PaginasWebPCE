@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 8 - Selectors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 8: Selectors</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Definición</h2>
+    <p>Los selectores en CSS indican qué elementos HTML serán afectados por un conjunto de reglas. Existen diferentes tipos de selectores, entre ellos: de etiqueta, de clase, de ID, universales, de atributo, pseudoclases, entre otros.</p>
+  </section>
+
+  <section>
+    <h2>Tipos comunes de selectores</h2>
+    <ul>
+      <li><strong>Selector de etiqueta:</strong> Aplica el estilo a todas las etiquetas de ese tipo. <code>p { color: blue; }</code></li>
+      <li><strong>Selector de clase:</strong> Aplica el estilo a todos los elementos que tienen esa clase. <code>.nombreDeClase { color: red; }</code></li>
+      <li><strong>Selector de ID:</strong> Aplica el estilo al elemento que tenga ese ID único. <code>#nombreDeID { color: green; }</code></li>
+      <li><strong>Selector universal:</strong> Aplica a todos los elementos. <code>* { margin: 0; }</code></li>
+      <li><strong>Selector de atributo:</strong> Aplica a los elementos con un atributo específico. <code>a[target="_blank"] { color: pink; }</code></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ejemplo de uso</h2>
+    <pre><code>&lt;!-- HTML --&gt;
+&lt;div class="contenedor"&gt;
+    &lt;p id="textoPrincipal"&gt;Hola Mundo&lt;/p&gt;
+    &lt;p&gt;Este es otro párrafo&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+/* Selector de etiqueta */
+p {
+    color: blue;
+}
+
+/* Selector de ID */
+#textoPrincipal {
+    font-weight: bold;
+}
+
+/* Selector de clase */
+.contenedor {
+    border: 2px solid #333;
+    padding: 10px;
+}
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 8</p>
+</footer>
+
+</body>
+</html>

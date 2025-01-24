@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 4 - CSS Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 4: CSS Text</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Definición</h2>
+    <p>CSS ofrece propiedades para formatear el texto de una página web, como alineación, decoraciones, transformación de mayúsculas o minúsculas, espaciado, entre otros.</p>
+  </section>
+
+  <section>
+    <h2>Sintaxis y uso</h2>
+    <pre><code>selector {
+    text-align: center;       /* left, right, center, justify */
+    text-decoration: none;    /* underline, overline, line-through */
+    text-transform: uppercase;/* uppercase, lowercase, capitalize */
+    letter-spacing: 2px;      /* Espacio entre letras */
+    word-spacing: 4px;        /* Espacio entre palabras */
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Ejemplo</h2>
+    <pre><code>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    text-decoration: underline;
+    text-align: justify;
+}
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 4</p>
+</footer>
+
+</body>
+</html>

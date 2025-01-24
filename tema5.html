@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 5 - CSS Font</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 5: CSS Font</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Definición</h2>
+    <p>Con las propiedades de fuente en CSS podemos cambiar la tipografía, tamaño, grosor y estilo de texto en un sitio web.</p>
+  </section>
+
+  <section>
+    <h2>Sintaxis</h2>
+    <pre><code>selector {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;    /* normal, bold, bolder, lighter, o numéricos (100,200,300...) */
+    font-style: italic;   /* normal, italic, oblique */
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Uso</h2>
+    <p>Con <code>font-family</code> especificamos la tipografía principal y fuentes alternativas. <code>font-size</code> determina el tamaño de la fuente, y <code>font-weight</code> define su grosor.</p>
+  </section>
+
+  <section>
+    <h2>Ejemplo</h2>
+    <pre><code>p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 5</p>
+</footer>
+
+</body>
+</html>

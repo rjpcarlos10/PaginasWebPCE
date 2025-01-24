@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema 3 - HTML Links e Hyper links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    pre, code {
+      background-color: #eee;
+      display: block;
+      padding: 1rem;
+      margin: 1rem 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tema 3: HTML Links e Hyper links</h1>
+</header>
+
+<main>
+  <section>
+    <h2>HTML Links</h2>
+    <p><strong>Definición:</strong> Los links (enlaces) en HTML permiten al usuario navegar entre diferentes páginas o secciones de la misma página. Se crean con la etiqueta <code>&lt;a&gt;</code> y el atributo <code>href</code>.</p>
+    <p><strong>Sintaxis:</strong></p>
+    <pre><code>&lt;a href="URL"&gt;Texto del enlace&lt;/a&gt;
+</code></pre>
+    <p><strong>Uso:</strong> El atributo <code>href</code> define la ruta o URL a la que lleva el enlace. Por ejemplo, puede ser un enlace externo (<em>http://ejemplo.com</em>), un enlace interno (otro archivo de nuestro proyecto), o un ancla interna para navegar dentro de la misma página.</p>
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;
+&lt;a href="pagina2.html"&gt;Ir a la página 2&lt;/a&gt;
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Hyper links (Hipervínculos)</h2>
+    <p><strong>Definición:</strong> Los hipervínculos o “hyper links” son la base de la navegación en la Web. Aparte de la etiqueta básica <code>&lt;a&gt;</code>, podemos añadir funcionalidades como abrir el enlace en una nueva pestaña o anclar partes específicas de la misma página.</p>
+    <p><strong>Sintaxis:</strong></p>
+    <pre><code>&lt;a href="URL" target="_blank"&gt;Texto del enlace&lt;/a&gt;
+</code></pre>
+    <p><strong>Uso:</strong> El atributo <code>target="_blank"</code> abre el enlace en una nueva pestaña. Para crear anclas internas dentro de la misma página, se utiliza el atributo <code>id</code> y la referencia con <code>#id</code>.</p>
+    <p><strong>Ejemplo con anclas internas:</strong></p>
+    <pre><code>&lt;!-- Enlaces en la misma página --&gt;
+&lt;a href="#seccion1"&gt;Ir a la Sección 1&lt;/a&gt;
+&lt;a href="#seccion2"&gt;Ir a la Sección 2&lt;/a&gt;
+
+&lt;!-- Más abajo en el documento --&gt;
+&lt;h2 id="seccion1"&gt;Sección 1&lt;/h2&gt;
+&lt;p&gt;Contenido de la sección 1.&lt;/p&gt;
+
+&lt;h2 id="seccion2"&gt;Sección 2&lt;/h2&gt;
+&lt;p&gt;Contenido de la sección 2.&lt;/p&gt;
+</code></pre>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver al Índice</a>
+  </nav>
+</main>
+
+<footer>
+  <p>Clase de Programación Web - Tema 3</p>
+</footer>
+
+</body>
+</html>
