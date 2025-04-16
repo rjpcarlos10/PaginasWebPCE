@@ -1,89 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Índice - Clase de Programación Web 7mo B PCE UTMACH</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header, footer {
-      background-color: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    nav li {
-      margin: 1rem 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0f4c81;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-	img.logo {
-      max-width: 150px; /* Ajusta el tamaño de la imagen si lo deseas */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      margin-top: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soluciones Tecnológicas Avanzadas</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo de la empresa" />
+        <span>SolucionesTech</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Clase de Programación Web 7mo B PCE UTMACH</h1>
-  <img class="logo" src="C:\Users\rjpca\OneDrive\Imágenes\pce.jpg" alt="Descripción de la imagen" />
-</header>
+  <section id="inicio" class="hero-section">
+    <img src="images/hero.jpg" alt="Imagen principal" />
+    <div class="hero-text">
+      <h1>Innovación y Tecnología a su Alcance</h1>
+      <p>Automatizamos procesos y creamos soluciones inteligentes para su negocio.</p>
+      <a href="#contacto" class="cta-button">Solicitar Información</a>
+    </div>
+  </section>
 
-<main>
-  <h2>Índice de Temas de la Pag. Web</h2>
-  <nav>
-    <ul>
-      <li><a href="tema1.html">1. Creación de un portal básico en HTML</a></li>
-      <li><a href="tema2.html">2. Sintaxis básica de funcionalidades CSS</a></li>
-      <li><a href="tema3.html">3. HTML Links e Hyper links</a></li>
-      <li><a href="tema4.html">4. CSS Text</a></li>
-      <li><a href="tema5.html">5. CSS Font</a></li>
-      <li><a href="tema6.html">6. HTML Styles - CSS</a></li>
-      <li><a href="tema7.html">7. CSS Syntax - CSS</a></li>
-      <li><a href="tema8.html">8. Selectors</a></li>
-    </ul>
-  </nav>
-</main>
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+  <section id="servicios" class="services-section">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/service-icons/automation.png" alt="Automatización" />
+        <h3>Automatización de Proyectos</h3>
+        <p>Optimice sus procesos mediante soluciones automatizadas personalizadas.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service-icons/chatbot.png" alt="Chatbots" />
+        <h3>Creación de Chatbots</h3>
+        <p>Desarrollamos asistentes virtuales para mejorar la atención al cliente.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service-icons/gpt.png" alt="Modelos GPT" />
+        <h3>Implementación de Modelos GPT</h3>
+        <p>Integración de inteligencia artificial para generación de contenido.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service-icons/articles.png" alt="Artículos" />
+        <h3>Redacción de Artículos</h3>
+        <p>Contenido profesional y optimizado para su blog o sitio web.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service-icons/books.png" alt="Libros" />
+        <h3>Creación de Libros</h3>
+        <p>Asesoría y desarrollo completo de libros digitales o impresos.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service-icons/thesis.png" alt="Tesis" />
+        <h3>Elaboración de Tesis</h3>
+        <p>Apoyo integral en la investigación y redacción de tesis académicas.</p>
+      </div>
+    </div>
+  </section>
 
-	createChat({
-		webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
-	});
-</script>
-<footer>
-  <p>Clase desarrollada por el profe Rosman de HTML y CSS</p>
-  <p>Carrera de Pedagogia de la Ciencias Experimentales</p>
-  <p>Machala - El Oro - Ecuador </p>
-  <p> 2025 </p>
-</footer>
+  <section id="contacto" class="contact-section">
+    <h2>Contáctenos</h2>
+    <form action="mailto:contacto@solucionestech.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
 
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Dirección:</strong> Av. Principal 123, Huaquillas, El Oro, Ecuador</p>
+      <p><strong>Teléfono:</strong> +593 7 123 4567</p>
+      <p><strong>Correo:</strong> contacto@solucionestech.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SolucionesTech. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
